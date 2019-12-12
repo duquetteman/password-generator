@@ -1,4 +1,35 @@
-.jumbotron {
-    max-width: 960px;
+
+
+/*Sets the width of the main contet box on each page.*/
+.container {
+    
    
+    background-color: white;
+    text-align: center;    
+}
+
+body {
+   
+background-color: lightgrey;
+text-align: center;
+}
+
+h1 {
+    margin: 50px;
+}
+
+.mainbox1 {
+
+}
+
+.mainbox2 {
+    background-color: lightsteelblue;
+    padding: 40px;
+    
+
+
+}
+
+.btn {
+    margin: 20px;
 }

@@ -2,45 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <div class="jumbotron">
-        <h1 class="display-4">Password Generator</h1>
-        <p class="lead">Generate your password</p>
-        <hr class="my-4">
-
-    </div>
-    <div class="container">
-        <div class="row maincontent">
-            <div class=" col-md-12">Generate a Password</div>
-        <div class="row">
-        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-        <div class="col-md-12"></div>
-        <div class="row">
-            <div class="col-md-6"><button id="generate">Generate Password</button></div>
-            <div class="col-md-6"><button id="copy">
-                    Copy to Clipboard
-                </button></div>
-        </div>
-        </div>
-
-
-
-
-
         
-    </div>
-    </div>
+   
 
+        <h1>Password Generator</h1>
+    <div class="container">
+       
+        <div class="row">
+            <div class="col-md-12 mainbox1">
+                <h2 id="aboutmehead">Generate a Password</h2>
+            </div>
+        </div>
 
+        <div class="row ">
+            <div class="col-md-12 mainbox2">
+                <h6>Your password displays here:</h6>
+                    <div class="form-group">
+                            <label for="exampleFormControlTextarea1"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+                               
+                            </textarea>
+                          </div>
+            </div>
+
+        </div>
+<div class="row">
+    <div class="col-md-6">
+            <button type="button" class="btn btn-danger">Generate Password</button>
+    </div>
+    <div class="col-md-6">
+            <button type="button" class="btn btn-success">Copy to Clipboard</button>
+    </div>
+</div>
+
+                
+<script src="main.js"></script>
 </body>
 
 </html>
