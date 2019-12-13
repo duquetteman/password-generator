@@ -4,6 +4,11 @@
 // }
 
 var howManyCharacters = parseInt(prompt("How many characters?"))
+
+if (howManyCharacters  < 8 || howManyCharacters > 128){
+	alert("Password must be between 8 and 128 characters. Please refresh the page and start Over.")
+}
+else {
 var includeSpecialCharacters = confirm("Do you want special characters?")
 var includeLowerCaseLetters = confirm("Do you want upper case letters?")
 var includeUpperCaseLetters = confirm("Do you want lower case letters?")
@@ -13,10 +18,9 @@ var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lower = "abcdefghijklmnopqrstuvwxyz";
 var number = "0123456789";
 var charSet = "";
-
-if (howManyCharacters < 8 || > 128){
-	alert("Password must be between 8 and 128 characters. Please refresh the page and start Over.")
 }
+
+
 
 function passwordResult() {
 if (includeSpecialCharacters) {
