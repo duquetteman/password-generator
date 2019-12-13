@@ -4,100 +4,47 @@
 // }
 
 var howManyCharacters = parseInt(prompt("How many characters?"))
-	var includeSpecialCharacters = confirm("Do you want special characters?")
-	var includeLowerCaseLetters = confirm("Do you want upper case letters?")
-	var includeUpperCaseLetters = confirm("Do you want lower case letters?")
-	var includeNumbers = confirm("Do you want numbers?")
+var includeSpecialCharacters = confirm("Do you want special characters?")
+var includeLowerCaseLetters = confirm("Do you want upper case letters?")
+var includeUpperCaseLetters = confirm("Do you want lower case letters?")
+var includeNumbers = confirm("Do you want numbers?")
+var symbol = "!@#$%^&*(){}[]=<>/,.";
+var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lower = "abcdefghijklmnopqrstuvwxyz";
+var number = "0123456789";
+var charSet = "";
 
-// How do I save the answers from these prompts? 
-
-// console.log(howManyCharacters, includeSpecialCharacters, includeLowerCaseLetters, includeUpperCaseLetters, includeNumbers)
-
-
-
-//need a global variable that we can modify to add these characters
-
-//define a variable
-let userPassword = [];
-
-//for loop based on howManyCharacters
-//conditionals on what to add
-
-//iterator, how long, how much it should increment
-for (var i = 0; i < (howManyCharacters); i++) {
-	//if they want special characters add them
-	if (includeSpecialCharacters) {
-		symbolCharacter()
-	}
-	//if they want lowercase add them
-	if (includeLowerCaseLetters) {
-		lowerCharacter()
-	}
-
-	//if they want numbers add them
-	if (includeNumbers) {
-		numberCharacter()
-	}
-	//if they want uppercase add them 
-	if (includeUpperCaseLetters) {
-		numberCharacter()
-	}
+if (howManyCharacters < 8 || > 128){
+	alert("Password must be between 8 and 128 characters. Please refresh the page and start Over.")
 }
-// console.log(userPassword);
-
-// Eric mentioned Concat array. Making an array from a previous list. 
-// Concat just makes a new array using the data from other arrays. How do I get the array data without the commas? Can I use .join? 
-
-
-
 
 function passwordResult() {
-
-
-	//add to that variable
-
+if (includeSpecialCharacters) {
+	// Do I need something here that references the symbol variable? 
+	charSet += symbol;
 }
 
-function symbolCharacter() {
-	const symbol = "!@#$%^&*(){}[]=<>/,."
-	var randomSymbol = symbol[Math.floor(Math.random() * symbol.length)];
-	// console.log(randomSymbol);
-	userPassword.push(randomSymbol)
-
-}
-symbolCharacter();
-// console.log(symbolCharacter());
-
-
-
-function upperCharacter() {
-	const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	var randomUpper = upper[Math.floor(Math.random() * upper.length)];
-	// console.log(randomUpper);
-	userPassword.push(randomUpper);
+if (includeLowerCaseLetters) {
+	charSet += lower;
 }
 
-upperCharacter();
-// console.log(upperCharacter());
-
-
-
-function lowerCharacter() {
-	const lower = "abcdefghijklmnopqrstuvwxyz"
-	var randomLower = lower[Math.floor(Math.random() * lower.length)];
-	// console.log(randomLower);
-	userPassword.push(randomLower);
+if (includeUpperCaseLetters) {
+	charSet += upper;
 }
-lowerCharacter();
 
-
-
-function numberCharacter() {
-	const number = "0123456789"
-	var randomNumber = number[Math.floor(Math.random() * number.length)];
-	// console.log(randomNumber);
-	userPassword.push(randomNumber);
+if (includeNumbers) {
+	charSet += number;
 }
-numberCharacter();
 
-document.getElementById("exampleFormControlTextarea1").value = userPassword;
+if (charSet == ""){
+	alert("Password must include at least one character option. Please refresh the page and make new choices.")
+}
+
+var userPassword = "";
+	for (var i = 0; i < howManyCharacters; i++) {
+userPassword += charSet[Math.floor(Math.random() * charSet.length)];
+	} 	
+document.getElementById('password').value = userPassword;
+}
+generateBtn = document.getElementById("generatePass")
+generateBtn.addEventListener("click", passwordResult);

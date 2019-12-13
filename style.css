@@ -3,7 +3,7 @@
 /*Sets the width of the main contet box on each page.*/
 .container {
     
-   
+   width: 960px;
     background-color: white;
     text-align: center;    
 }
@@ -18,8 +18,9 @@ h2{
     margin: 30px;
 }
 
-.mainbox1 {
-
+#password{
+    text-align: center;
+    
 }
 
 .mainbox2 {
