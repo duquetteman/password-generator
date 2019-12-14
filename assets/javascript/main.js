@@ -43,7 +43,7 @@ userPassword += charSet[Math.floor(Math.random() * charSet.length)];
 	} 	
 document.getElementById('password').value = userPassword;
 }
-//This is looking for the click from the user. When they press the button, it displays the password i the text box. 
+//This is looking for the click from the user. When they press the button, it displays the password in the text box. 
 generateBtn = document.getElementById("generatePass")
 generateBtn.addEventListener("click", passwordResult);
 // This controls the copy to clipboard function. 
