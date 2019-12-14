@@ -2,7 +2,7 @@
 var howManyCharacters = parseInt(prompt("Please enter a number between 8 and 128"))
 // Conditional to set the range of password characters necessary for the page to work. 
 if (howManyCharacters  < 8 || howManyCharacters > 128){;
-	alert("Press OK to start over and pick a number between 8 and 128")
+	alert("Start over and pick a number between 8 and 128")
 	location.reload()
 }
 // If the user gives a valid number input, run these else confirms.
