@@ -4,8 +4,8 @@
 .container {
     background-color: white;
     text-align: center;
-    border: 4px solid slategray;
-    margin-top: 20px; 
+    border: 10px solid rgb(52, 57, 63);
+    margin-top: 15px; 
 }
 
 body {  

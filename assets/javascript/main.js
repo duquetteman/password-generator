@@ -1,16 +1,16 @@
 // Verify how many characters long the user wants the password to be.
-var howManyCharacters = parseInt(prompt("How many characters long would you like your password to be? It must be between 8 and 128 characters."))
+var howManyCharacters = parseInt(prompt("Please enter a number between 8 and 128"))
 // Conditional to set the range of password characters necessary for the page to work. 
 if (howManyCharacters  < 8 || howManyCharacters > 128){;
-	alert("Hey there, fancy pants... password must be between 8 and 128 numbers long. Press OK to refresh the page and start over.")
+	alert("Press OK to start over and pick a number between 8 and 128")
 	location.reload()
 }
 // If the user gives a valid number input, run these else confirms.
 else {
-var includeSpecialCharacters = confirm("Do you want SPECIAL CHARACTERS?")
-var includeLowerCaseLetters = confirm("Do you want LOWERCASE LETTERS?")
-var includeUpperCaseLetters = confirm("Do you want UPPERCASE LETTERS?")
-var includeNumbers = confirm("Do you want NUMBERS?")
+var includeSpecialCharacters = confirm("Tap OK to include SPECIAL CHARACTERS")
+var includeLowerCaseLetters = confirm("Tap OK to include LOWERCASE LETTERS")
+var includeUpperCaseLetters = confirm("Tap OK to include UPPERCASE LETTERS")
+var includeNumbers = confirm("Tap OK to include NUMBERS")
 var symbol = "!@#$%^&*(){}[]=<>/,.";
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lower = "abcdefghijklmnopqrstuvwxyz";
