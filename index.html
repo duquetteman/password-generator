@@ -31,7 +31,7 @@
                 <h6>Your password displays here when you click on Generate Password button below.</h6>
                 <br>
                     <div class="form-group">
-                            <textarea readonly class="form-control" id="password" rows="3" placeholder="Click Generate Password button to display the password"></textarea>
+                            <textarea readonly class="form-control" id="password" rows="3" placeholder="Click Generate Password button to display the password here..."></textarea>
                           </div>
                           <br>
                 <h6>Not happy with the results? Keep clicking Generate Password until you get one you like, or refresh the page to select new criteria.</h6>
@@ -39,12 +39,15 @@
 
         </div>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
             <button type="button" class="btn btn-danger" id="generatePass">Generate Password</button>
     </div>
-    <div class="col-md-6">
-            <button type="button" class="btn btn-success">Copy to Clipboard</button>
+    <div class="col-md-4">
+            <button type="button" class="btn btn-success" id="copy">Copy to Clipboard</button>
     </div>
+    <div class="col-md-4">
+        <button onclick="window.location.href = 'index.html';" type="button" class="btn btn-danger">Start Over</button>
+</div>
     
 </div>
 
