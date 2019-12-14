@@ -2,7 +2,7 @@
 var howManyCharacters = parseInt(prompt("How many characters long would you like your password to be? It must be between 8 and 128 characters."))
 // Conditional to set the range of password characters necessary for the page to work. 
 if (howManyCharacters  < 8 || howManyCharacters > 128){;
-	alert("Hey there, fancy pants... password must be between 8 and 128 number long. Press OK to refresh the page and start Over.")
+	alert("Hey there, fancy pants... password must be between 8 and 128 numbers long. Press OK to refresh the page and start over.")
 	location.reload()
 }
 // If the user gives a valid number input, run these else confirms.
@@ -33,7 +33,7 @@ if (includeNumbers) {
 }
 // If the user hits cancel for each of the confirms above, then it will display this message. Once they hit OK on the alert box, it will reload the page and force them to select criteria again. 
 if (charSet == ""){
-	alert("Password must include at least one character option. Press OK to refresh the page and start Over.")
+	alert("Password must include at least one character option. Press OK to refresh the page and start over.")
 	location.reload();
 }
 // For loop that will generate the length of the final password based on the nubember selected from the inital character prompt. 
