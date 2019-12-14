@@ -7,20 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Gener8r</title>
     <!--Using Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-<!--Adding the navbar using Bootstram class definitions-->
+<!--Adding the navbar using Bootstrap class definitions-->
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a class= "navbar-brand" href="#">Random Password Generator</a>
+        <a class="navbar-brand" href="#">Random Password Generator</a>
     </nav>
-        
-   
-
-       
     <div class="container">
-       
+
         <div class="row">
             <div class="col-md-12 mainbox1">
                 <h2 id="aboutmehead">Generate a Password</h2>
@@ -31,30 +28,30 @@
             <div class="col-md-12 mainbox2">
                 <h6>Your password displays here when you click on Generate Password button below.</h6>
                 <br>
-                    <div class="form-group">
-                            <textarea readonly class="form-control" id="password" rows="3" placeholder="Click Generate Password button to display the password here..."></textarea>
-                          </div>
-                          <br>
-                <h6>Not happy with the results? Keep clicking Generate Password until you get one you like, or refresh the page to select new criteria.</h6>
+                <div class="form-group">
+                    <textarea readonly class="form-control" id="password" rows="3"
+                        placeholder="Click Generate Password button to display the password here..."></textarea>
+                </div>
+                <br>
+                <h6>Not happy with the results? Keep clicking Generate Password until you get one you like, or refresh
+                    the page to select new criteria.</h6>
             </div>
 
         </div>
-<div class="row">
-    <div class="col-md-4">
-            <button type="button" class="btn btn-danger" id="generatePass">Generate Password</button>
-    </div>
-    <div class="col-md-4">
-            <button type="button" class="btn btn-success" id="copy">Copy to Clipboard</button>
-    </div>
-    <!--I decided it would be nice for the user to have a start over button in case they want to choose different criteria. I knew I could probably do it in javascript but it was simpler code to add the href and link back to my index.html page-->
-    <div class="col-md-4">
-        <button onclick="window.location.href = 'index.html';" type="button" class="btn btn-danger">Start Over</button>
-</div>
-    
-</div>
-
-                
-<script src="main.js"></script>
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-danger" id="generatePass">Generate Password</button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-success" id="copy">Copy to Clipboard</button>
+            </div>
+            <!--I decided it would be nice for the user to have a start over button in case they want to choose different criteria. I knew I could probably do it in javascript but it was simpler code to add the href and link back to my index.html page-->
+            <div class="col-md-4">
+                <button onclick="window.location.href = 'index.html';" type="button" class="btn btn-danger">Start
+                    Over</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
 </body>
 
 </html>
