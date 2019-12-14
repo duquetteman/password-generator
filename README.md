@@ -1,7 +1,7 @@
 # Unit 03 JavaScript Homework: Password Generator
 
 
-## User Story
+## Story
 
 As an employee with access to sensitive data, I want to randomly generate a password that meets certain criteria so that I can create a strong password that provides greater security.
 
@@ -9,7 +9,7 @@ As an employee with access to sensitive data, I want to randomly generate a pass
 
 For companies that handle large amounts of sensitive data, weak passwords can pose a real security threat. An application that can generate strong passwords quickly and effortlessly saves employees time and ensures secure access to data.
 
-## Acceptance Criteria
+## Criteria
 
 Given that a user needs a new, secure password, there should be a prompt to ask for password criteria, then a password is generated.
 
@@ -47,9 +47,9 @@ https://github.com/duquetteman/password-generator
 
 Screenshot of finished project:
 
-![password generator demo](assets/screenshot.png
+![password generator demo](assets/images/screen-shot.png)
 )
 
+Special thanks goes to Kevin Geary, Israel Medina, Brittany Taylor, and Luke Duquette for their collaboration, direction, and assistance, and encouragemet. 
 
-Special thanks goes to Kevin Geary, Israel Medina, Brittany Taylor, and Luke Duquette for their collaboration, direction, and assistance. 
 - - -
