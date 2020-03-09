@@ -43,7 +43,7 @@ The application has a clean and polished user interface and is responsive, ensur
 The application is deployed to GitHub Pages.
 
 Link to the deployed GitHub Pages URL:
-https://github.com/duquetteman/password-generator
+https://duquetteman.github.io/password-generator/
 
 Screenshot of finished project:
 
