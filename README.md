@@ -3,7 +3,7 @@
 
 ## Story
 
-As an employee with access to sensitive data, I want to randomly generate a password that meets certain criteria so that I can create a strong password that provides greater security.
+As a user with access to sensitive data, I want to randomly generate a password that meets certain criteria so that I can create a strong password that provides greater security.
 
 ## Business Context
 
@@ -50,6 +50,6 @@ Screenshot of finished project:
 ![password generator demo](assets/images/screen-shot.png)
 )
 
-Special thanks goes to Kevin Geary, Israel Medina, Brittany Taylor, and Luke Duquette for their collaboration, direction, and assistance, and encouragemet. 
+Special thanks goes to Kevin Geary, Israel Medina, Brittany Taylor, and Luke Duquette for their collaboration, direction, assistance, and encouragement. 
 
 - - -
